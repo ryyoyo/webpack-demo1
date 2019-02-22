@@ -4,7 +4,7 @@ import './index.css';
 import './App.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import Welcome from './Welcome';
+// import Welcome from './Welcome';
 
 ReactDOM.render(
 	<App />,
