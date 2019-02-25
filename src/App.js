@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
-// import './App.css';
+import './App.css';
+import './TodoItem.css';
 import 'normalize.css';
 import './reset.css';
 import TodoInput from './TodoInput';
@@ -35,7 +36,7 @@ class App extends Component {
             onChange={this.changTitle.bind(this)}
             onSubmit={this.addTodo.bind(this)}/>
         </div>
-        <ol>
+        <ol className="todoList">
           {todos}
         </ol>
       </div>
