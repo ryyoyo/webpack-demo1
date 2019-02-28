@@ -9,8 +9,9 @@ AV.init({
 
 export default AV
 
-export function signUp(username, password, successFn, errorFn){
+export function signUp(email, username, password, successFn, errorFn){
 	var user = new AV.User()
+	user.setUserEmail(email)
 	user.setUsername(username)
 	user.setUserPassword(password)
 	user.signUp().then(function(loginedUser){
